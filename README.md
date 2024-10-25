@@ -30,6 +30,7 @@ You can verify the installations by running:
 node -v
 npm -v
 git --version
+
 Clone the Repository
 bash
 Copy code
