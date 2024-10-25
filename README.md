@@ -29,59 +29,79 @@ You can verify the installations by running:
 ```bash
 node -v
 npm -v
-git --version
+git --version 
 
-Clone the Repository
-bash
-Copy code
+```
+### Clone the Repository
+
+``` bash
 git clone https://github.com/Mereb-Tech/react-tabs-challenge.git
-Navigate to the Project Directory
-bash
-Copy code
+```
+
+### Navigate to the Project Directory
+
+```bash
 cd react-tabs-challenge
-Install Frontend Dependencies
-bash
-Copy code
+```
+
+### Install Frontend Dependencies
+
+```bash
 npm install
-Navigate to the CORS Proxy Directory
+```
+
+### Navigate to the CORS Proxy Directory
+
 The CORS proxy setup is located within the cors-proxy directory.
 
-bash
-Copy code
+```bash
 cd cors-proxy
+```
+
+```bash
 npm install
-Start the CORS Proxy Server
-bash
-Copy code
+```
+
+### Start the CORS Proxy Server
+
+``` bash
 node server.js
+```
+
 You should see the following output indicating that the proxy server is running:
 
-arduino
-Copy code
+```bash
 CORS Anywhere proxy running on http://localhost:8080
-Note: Keep this terminal window open as the proxy server needs to run concurrently with the React application.
+```
 
-Open a New Terminal Window
+### Note: Keep this terminal window open as the proxy server needs to run concurrently with the React application.
+
+### Open a New Terminal Window
+
 Ensure you're in the root directory of the project (react-tabs-challenge).
 
 Start the React Development Server
+
 First, ensure you're in the root directory:
 
-bash
-Copy code
+```bash
 cd react-tabs-challenge
+```
+
 Then, install frontend dependencies (if not already done):
 
-bash
-Copy code
+```bash
 npm install
+```
+
 Start the React application:
 
-bash
-Copy code
+```bash
 npm start
+```
+
 This command will launch the React application in your default browser at http://localhost:3000. If it doesn't open automatically, you can manually navigate to the URL.
 
-Usage
+## Usage
 Interact with Tabs
 Click on any of the four tabs (Tab 1, Tab 2, Tab 3, Tab 4) to fetch and display content.
