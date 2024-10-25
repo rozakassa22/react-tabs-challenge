@@ -14,19 +14,71 @@ body {
     width: 960px;
     margin: 0 auto;
 }
-/* TODO: Add css here */
-.tabs {
 
+.tabs {
+    display: flex;
+    background-color: #1a1a1a;
+    overflow: hidden;
+}
+
+.tabs button {
+    flex: 1;
+    padding: 20px 0;
+    color: #aaa; /* Gray text */
+    background-color: #1a1a1a;
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    font-size: 0.95rem; 
+    letter-spacing: 0.5px; 
+  
 }
 
 
-@media only screen and (max-width: 960px) {
+.tabs button:hover {
+    background-color: #333; /* Lighter shade when hovered */
+    color: white; /* White text when hovered */
+}
 
+.tabs button.active-tab {
+    background-color: #006699; /* Darker blue when active */
+    color: white; /* White text */
+}
+
+.content {
+    padding:50px  70px;
+    background-color: #fff;
+    font-weight: 350;
+    color: #000;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    letter-spacing: 1.5px; 
+
+}
+
+.content h2 {
+    font-size: 1.2rem;
+    color: #222; /* Darker color for better contrast */
+    margin-bottom: 15px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 960px) {
     .container {
         width: 100%;
     }
 
+    .tabs {
+        flex-direction: column; /* Stack tabs vertically on small screens */
+    }
+
     .content {
-        padding: 50px;
+        padding: 20px;
     }
 }
